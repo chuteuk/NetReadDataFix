@@ -1,3 +1,4 @@
+if SERVER then AddCSLuaFile("autorun/net_readdatafix.lua") end
 --Override the old net.ReadData function
 local oldNetReadData = oldNetReadData or net.ReadData
 function net.ReadData(len)
